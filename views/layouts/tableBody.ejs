@@ -1,0 +1,41 @@
+<div class="employee-table">
+  <div class="employe-table-header">
+    <h5>Employe List</h5>
+
+    <div class="select-page">
+      <select name="" id="emplPerPage">
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option selected value="10">10</option>
+      </select>
+
+      <span>of 10</span>
+    </div>
+
+    <button type="button" id="openForm" onclick="openAddform()">
+      Add Employee
+    </button>
+  </div>
+
+  <div class="employees-list">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class="icon">Sl.No</th>
+          <th scope="col" class="icon">Name</th>
+          <th scope="col" class="icon">Email</th>
+          <th scope="col" class="icon">Phone</th>
+          <th scope="col" class="icon">Gender</th>
+          <th scope="col" class="icon">DOB</th>
+          <th scope="col" class="icon">Country</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+
+      <tbody id="employeesData"></tbody>
+    </table>
+  </div>
+</div>

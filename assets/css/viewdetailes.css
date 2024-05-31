@@ -1,0 +1,107 @@
+.employee-view {
+    width: 68%;
+    border-radius: 20px;
+    background: var(--secondary-primary-white, #FFF);
+    padding: 20px;
+}
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 191px;
+}
+
+#userP {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: -65px;
+    border: 5px solid #fff;
+}
+
+#userP img {
+    width: 110px;
+    border-radius: 50%;
+    height: 110px;
+    object-fit: cover;
+}
+
+.avatar h2 {
+    color: #2B3674;
+text-align: center;
+
+
+font-family: DM Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; 
+letter-spacing: -0.4px;
+
+}
+
+.avatar h5 {
+    color: #707EAE;
+text-align: center;
+
+/* Body Text/ Small/ Medium */
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 171.429% */
+letter-spacing: -0.28px;
+}
+
+.details-head {
+    color: #707EAE;
+
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.28px;
+}
+
+.details {
+    color: #2B3674;
+
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.32px;
+}
+
+.moredetails .row div {
+    border-radius: 16px;
+    box-shadow: 0px 18px 40px 0px rgba(112, 144, 176, 0.12);
+    color: #fff;
+
+}
+
+.moredetails {
+    margin-top: 129px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.moredetails .row {
+    gap: 11px;
+}
+
+.moredetails .col-4 {
+    width: 32.333333%;
+    padding: 25px 10px
+}
+
+.moredetails .col-6 {
+    width: 49%;
+    padding: 25px 10px
+}
+#delete {
+    background: #EB506C;
+}

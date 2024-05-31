@@ -1,0 +1,86 @@
+<div class="container-admin">
+    <div class="body">
+       <div class="nav-body">
+ 
+         <div class="title">
+             <h5>Employee</h5>
+             <h5>Management</h5>
+         </div>
+ 
+         <div class="nav-links">
+             <ul>
+                 <li><i class="fa-solid fa-house"></i><a href="#">Dashbored</a></li>
+                 <li><i class="fa-solid fa-chart-simple"></i><a href="./index.html">Employees</a></li>
+                 <li><i class="fa-solid fa-user"></i><a href="#">My Profile</a></li>
+                 <li><i class="fa-solid fa-lock"></i><form action="/employees/logout" method="post">
+                  <button type="submit">Logout</button>
+                 </form></li>
+             </ul>
+         </div>
+ 
+         <div class="nav-footer">
+           <span>Powered by</span>
+           <img src="/images/image 1.png" alt="">
+         </div>
+       </div>
+  
+       <!-- List Part -->
+ 
+       <div class="employees">
+ 
+         <div class="alert alert-success w-50 m-auto mt-2 text-center" id="alert" role="alert">
+           A simple success alert—check it out!
+         </div>
+ 
+         <div class="head">
+            <div class="list-title">
+             <p>Dashbard / Employees</p>
+             <h4>Employees</h4>
+            </div>
+           <div class="search">
+            <div class="input-group">
+             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+             <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" onkeyup="serchData()" id="search">
+           </div>
+ 
+           <div class="profile-pic">
+             <i class="fa-regular fa-bell"></i>
+             <img src="/images/Elipse 5.png" alt="profile" class="rounded-circle">
+           </div>
+         </div>
+       </div>
+ 
+         <!-- Table body -->
+         <%- include('./tableBody')  %> 
+       </div>
+       </div>
+ 
+       <div class="pagination-btns d-flex justify-content-end gap-1">
+
+        <button type="button" id="prevBtn" onclick="doublePrev()"><i class="fa-solid fa-angles-left"></i></button>
+
+        <button type="button" id="prevBtn" onclick="prevBtn()"><i class="fa-solid fa-chevron-left"></i></button>
+        <div id="nav_btns" class=" d-flex gap-1">
+        
+      </div>
+        <button type="button" id="nextBtn" onclick="nextBtn()"><i class="fa-solid fa-chevron-right"></i></i></button>
+
+        <button type="button" id="prevBtn" onclick="doubleNext()"><i class="fa-solid fa-angles-right"></i></button>
+       </div>
+   
+       <footer>
+         <span>© 2023  All Rights Reserved. <strong>Stackup</strong></span>
+ 
+         <div class="terms">
+           <span>Terms of Use</span>
+           <span>Privacy Policy</span>
+         </div>
+       </footer>
+     </div>
+ 
+ 
+   
+       <!-- List Part -->
+    </div>
+   </div>
+ 

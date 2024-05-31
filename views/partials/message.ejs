@@ -1,0 +1,15 @@
+<% if(locals.message) { %>
+<div class="alert <%= locals.message.type %>">
+  <%if(locals.message.type == "info") {%>
+  <i class="fa-solid fa-circle-info"></i>
+  <% }%> <%if(locals.message.type == "warning") {%>
+  <i class="fa-solid fa-triangle-exclamation"></i>
+  <% }%> <%if(locals.message.type == "success") {%>
+  <i class="fa-solid fa-circle-check"></i>
+  <% }%> <%if(locals.message.type == "danger") {%>
+  <i class="fa-solid fa-triangle-exclamation danger-icon"></i>
+  <% }%>
+
+  <p><%= locals.message.info %></p>
+</div>
+<% } %>
